@@ -19,8 +19,4 @@ phases:
       - aws events put-events --entries file://ami_builder_event.json
       - echo "build completed on `date`"
       - codebuild-breakpoint
-artifacts:
-  files:
-    - ami_builder_event.json
-    - build.log
-  discard-paths: yes
+
